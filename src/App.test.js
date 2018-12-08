@@ -52,6 +52,8 @@ describe('<App />', () => {
       expect(instance.state.isOn).toBe(true);
       button.simulate('click');
       expect(instance.state.isOn).toBe(false);
+      button.simulate('click');
+      expect(instance.state.isOn).toBe(true);
     });
   });
 });
